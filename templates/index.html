@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Agrega las referencias a Bootstrap -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+        <title>Actores Destacados de los 80´s</title>
+        <style>
+            .header-container {
+                margin-right: 15%;
+            }
+            .form-container {
+                margin-right: 15%;
+            }
+        </style>
+    </head>
+      
+    <body>
+      <div class="jumbotron">
+          <div class="container header-container">
+              <h1 class="display-4">40 Actores más Destacados en los 80´s</h1>
+          </div>
+          <div class="container form-container">
+              <p class="lead">Escribe el Nombre de un actor o actriz de los 80´s:</p>
+              <form action="/api/searchactor" method="post">
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Nombre actor</label>
+                      <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+          </div>
+      </div>
+  </body>
+      
+</html>
