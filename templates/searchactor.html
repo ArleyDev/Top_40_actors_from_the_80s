@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca un actor de los 80s</title>
+    <!-- Agrega las referencias a Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.min.js"></script>
+  </head>
+  
+  <body>
+    <div class="container">
+      <h1>Este es tu actor o actriz de los 80´s:</h1>
+      <table class="table">
+        <tbody>
+          <tr>
+            <th>Nombre</th>
+            <td>{{actoractrizPlaceholder.nombre}}</td>
+          </tr>
+          <tr>
+            <th>Películas Filmadas en los 80´s</th>
+            <td>{{actoractrizPlaceholder.peliculas}}</td>
+          </tr>
+          <tr>
+            <th>Edad</th>
+            <td>{{actoractrizPlaceholder.edad}}</td>
+          </tr>
+          <tr>
+            <th>Número de Películas durante los 80´s</th>
+            <td>{{actoractrizPlaceholder.numeroPeliculas}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="/" class="btn btn-primary">Ir a inicio</a>
+    </div>
+  </body>
+</html>
